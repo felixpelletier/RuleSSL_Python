@@ -3,6 +3,7 @@
 #include <Vector.hpp>
 #include <GameState.hpp>
 #include <StrategyState.hpp>
+#include "Plugin.h"
 
 using namespace boost::python;
 

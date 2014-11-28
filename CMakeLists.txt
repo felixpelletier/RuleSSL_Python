@@ -32,7 +32,8 @@ option(BUILD_TESTS "Build unit tests." TRUE)
 #Flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Strategie/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Strategie/include
+		    ${RuleMain_SOURCE_DIR}/include/)
 
 add_subdirectory(RuleSSL)
 add_subdirectory(Strategie)
