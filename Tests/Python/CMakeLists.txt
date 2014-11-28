@@ -15,7 +15,7 @@ endif( NOT SDL_FOUND )
 
 add_custom_target(copy_test_assets)
 add_executable(PythonTest ${PYTHON_TEST_FILES})
-add_dependencies(PythonTest copy_test_assets rule-python)
+add_dependencies(PythonTest copy_test_assets rule_python)
 target_link_libraries(PythonTest rule-strategie ${Boost_LIBRARIES} ${PYTHON_LIBRARIES} ${SDL_LIBRARY} ${SDLIMAGE_LIBRARY} SDLmain)
 add_custom_command(TARGET copy_test_assets POST_BUILD
                      COMMAND ${CMAKE_COMMAND} -E
