@@ -26,3 +26,10 @@
 *.exe
 *.out
 *.app
+
+syntax: glob
+[B|b]uild/
+.idea/
+CMakeLists.txt.user
+proto/src
+*.pyc

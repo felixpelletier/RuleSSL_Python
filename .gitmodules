@@ -1,0 +1,3 @@
+[submodule "RuleSSL"]
+	path = RuleSSL
+	url = https://github.com/RoboCupULaval/RuleSSL
