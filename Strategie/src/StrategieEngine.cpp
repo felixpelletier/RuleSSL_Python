@@ -1,5 +1,7 @@
-#include <script.hpp>
+#include <StrategieEngine.h>
 #include <sys/time.h>
+
+namespace Rule {
 
 using namespace boost::python;
 using namespace boost::python::api;
@@ -96,18 +98,9 @@ void StrategieEngine::updatePosition(){
 
 }
 
-//This does what it says on the tin
-PyObject* StrategieEngine::arrayToTuple(long array[]){
-	int size = sizeof(array)/sizeof(long);
-	PyObject *pTuple = PyTuple_New(size);
-	for (int i = 0; i < size; i++){
-		PyTuple_SetItem(pTuple, i, PyLong_FromLong(array[i]));
-	}
-	return pTuple;
-
-}
-
 struct StrategyState StrategieEngine::getState()
 {
 	return this->strategyState;
+}
+
 }

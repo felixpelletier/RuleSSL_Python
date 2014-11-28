@@ -1,6 +1,8 @@
-#include <main.hpp>
+#include <main.h>
 
 //Ceci est le moteur de jeu (simulé).
+
+using namespace Rule;
 
 int main()
 {

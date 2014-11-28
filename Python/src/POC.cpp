@@ -1,12 +1,13 @@
-#include <Vector.hpp>
-#include <GameState.hpp>
-#include <StrategyState.hpp>
+#include <Vector.h>
+#include <GameState.h>
+#include <StrategyState.h>
 #include <boost/python.hpp>
 
 //Creates the POC module in python containing various utilities (PLUGINS)
 BOOST_PYTHON_MODULE(rule_python)
 {
     using namespace boost::python;
+    using namespace Rule;
 
     class_<Vector>("Vector")
 	    .def("set", &Vector::set)

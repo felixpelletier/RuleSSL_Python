@@ -1,11 +1,10 @@
 #include <boost/thread.hpp> 
 #include <boost/python.hpp>
-#include <Vector.hpp>
-#include <GameState.hpp>
-#include <StrategyState.hpp>
-#include "Plugin.h"
+#include <Vector.h>
+#include <GameState.h>
+#include <StrategyState.h>
 
-using namespace boost::python;
+namespace Rule {
 
 class StrategieEngine {
 	struct GameState gameState;
@@ -14,10 +13,11 @@ class StrategieEngine {
 	void updatePosition();
 	private:
 		boost::thread updateThread;
-		PyObject* arrayToTuple(long array[]);
 	public:
 		StrategieEngine();
 		~StrategieEngine();
 		void setGameState(struct GameState data);
 		struct StrategyState getState();
 };
+
+}

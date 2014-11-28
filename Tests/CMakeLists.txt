@@ -9,7 +9,7 @@ include_directories(SYSTEM ${GMOCK_DIR}/gtest/include
                            ${CMAKE_CURRENT_SOURCE_DIR}/Python
 			   )
 
-file(GLOB PYTHON_TEST_FILES "${CMAKE_CURRENT_SOURCE_DIR}/Python/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/Python/*.hpp")
+file(GLOB PYTHON_TEST_FILES "${CMAKE_CURRENT_SOURCE_DIR}/Python/*.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/Python/*.h")
 
 add_subdirectory(Python)
 

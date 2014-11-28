@@ -1,7 +1,9 @@
 #ifndef POC_GAMESTATE
 #define POC_GAMESTATE
 
-#include "Vector.hpp"
+#include "Vector.h"
+
+namespace Rule { 
 
 //This is the current state of the game
 //
@@ -14,5 +16,7 @@ struct GameState{
 	long time;
 	long getTime() const { return time; };
 };
+
+}
 
 #endif
