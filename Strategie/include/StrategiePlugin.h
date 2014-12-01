@@ -1,8 +1,8 @@
 #include "Plugin.h"
 
-namespace Rule {
+namespace Rule { namespace Strategie { 
 
-class StrategiePlugin : public Plugin {
+class StrategiePlugin : public Rule::Plugin {
 	private:
 	
 	public:
@@ -17,4 +17,4 @@ class StrategiePlugin : public Plugin {
 		~StrategiePlugin();
 };
 
-}
+} }

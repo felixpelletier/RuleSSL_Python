@@ -3,7 +3,7 @@
 
 #include "Vector.h"
 
-namespace Rule {
+namespace Rule { namespace Strategie { 
 
 //This is the strategy engine's response.
 //It tells the main game engine where it wants it's players. 
@@ -17,7 +17,7 @@ struct StrategyState{
 	
 };
 
-}
+} }
 
 #endif
 

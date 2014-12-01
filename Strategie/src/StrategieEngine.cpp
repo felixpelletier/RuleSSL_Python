@@ -1,7 +1,7 @@
 #include <StrategieEngine.h>
 #include <sys/time.h>
 
-namespace Rule {
+namespace Rule { namespace Strategie { 
 
 using namespace boost::python;
 using namespace boost::python::api;
@@ -103,4 +103,4 @@ struct StrategyState StrategieEngine::getState()
 	return this->strategyState;
 }
 
-}
+}}

@@ -1,5 +1,5 @@
-#ifndef POC_VECTOR
-#define POC_VECTOR
+#ifndef RULE_VECTOR
+#define RULE_VECTOR
 
 namespace Rule {
 

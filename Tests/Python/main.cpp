@@ -2,7 +2,7 @@
 
 //Ceci est le moteur de jeu (simulé).
 
-using namespace Rule;
+using namespace Rule::Strategie;
 
 int main()
 {

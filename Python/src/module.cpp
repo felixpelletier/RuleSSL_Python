@@ -8,6 +8,7 @@ BOOST_PYTHON_MODULE(rule_python)
 {
     using namespace boost::python;
     using namespace Rule;
+    using namespace Rule::Strategie;
 
     class_<Vector>("Vector")
 	    .def("set", &Vector::set)

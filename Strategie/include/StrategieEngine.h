@@ -4,7 +4,7 @@
 #include <GameState.h>
 #include <StrategyState.h>
 
-namespace Rule {
+namespace Rule { namespace Strategie { 
 
 class StrategieEngine {
 	struct GameState gameState;
@@ -20,4 +20,4 @@ class StrategieEngine {
 		struct StrategyState getState();
 };
 
-}
+} }

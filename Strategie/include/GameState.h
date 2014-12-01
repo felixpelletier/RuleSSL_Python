@@ -3,7 +3,7 @@
 
 #include "Vector.h"
 
-namespace Rule { 
+namespace Rule { namespace Strategie { 
 
 //This is the current state of the game
 //
@@ -17,6 +17,6 @@ struct GameState{
 	long getTime() const { return time; };
 };
 
-}
+} }
 
 #endif
